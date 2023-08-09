@@ -10,10 +10,13 @@ import SwiftUI
 struct StartButtonView: View {
     //MARK: - PROPERTIES
     
+    // to use isOnboarding key value to mutate the property in the App storage
+    @AppStorage("isOnboarding") var isOnboardingViewActive: Bool?
+    
     //MARK: - BODY
     var body: some View {
         Button {
-            print("Exit the on boarding")
+            isOnboardingViewActive = false
         } label: {
             HStack(spacing: 8) {
                 Text("Start")

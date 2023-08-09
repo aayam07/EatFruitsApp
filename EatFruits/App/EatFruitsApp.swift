@@ -7,11 +7,20 @@
 
 import SwiftUI
 
-@main
+@main  // allows a type to be the entry point for the execution of the program (here, below struct)
 struct EatFruitsApp: App {
+    
+    // to store the user defaults in the permanent System App Storage. When value changes it updates the UI immediately. Here, 'isOnboarding' is the key to store the boolean variable value in the system storage
+    @AppStorage("isOnboarding") var isOnboardingViewActive: Bool = true
+    
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
+            if isOnboardingViewActive {
+                OnboardingView()
+            } else {
+                ContentView()
+            }
+            
         }
     }
 }

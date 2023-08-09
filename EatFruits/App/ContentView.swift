@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @AppStorage("isOnboarding") var isOnboarding: Bool?
+    
     var body: some View {
         Text("Hello World!")
+        Button {
+            isOnboarding = true
+        } label: {
+            Text("Click me")
+        }
+
     }
 }
 
