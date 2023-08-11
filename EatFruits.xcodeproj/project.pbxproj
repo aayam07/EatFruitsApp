@@ -15,6 +15,7 @@
 		A025E2502A85ED080092F109 /* FruitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025E24F2A85ED080092F109 /* FruitDetailView.swift */; };
 		A025E2522A85F23D0092F109 /* FruitHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025E2512A85F23D0092F109 /* FruitHeaderView.swift */; };
 		A025E2542A85F6BC0092F109 /* SourceLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025E2532A85F6BC0092F109 /* SourceLinkView.swift */; };
+		A025E2562A862A1B0092F109 /* FruitNutrientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025E2552A862A1A0092F109 /* FruitNutrientsView.swift */; };
 		A053027C2A84F12100193121 /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053027B2A84F12100193121 /* FruitRowView.swift */; };
 		A0E9FB6D2A811DE3000C538B /* EatFruitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9FB6C2A811DE3000C538B /* EatFruitsApp.swift */; };
 		A0E9FB6F2A811DE3000C538B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9FB6E2A811DE3000C538B /* ContentView.swift */; };
@@ -31,6 +32,7 @@
 		A025E24F2A85ED080092F109 /* FruitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailView.swift; sourceTree = "<group>"; };
 		A025E2512A85F23D0092F109 /* FruitHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitHeaderView.swift; sourceTree = "<group>"; };
 		A025E2532A85F6BC0092F109 /* SourceLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLinkView.swift; sourceTree = "<group>"; };
+		A025E2552A862A1A0092F109 /* FruitNutrientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrientsView.swift; sourceTree = "<group>"; };
 		A053027B2A84F12100193121 /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
 		A0E9FB692A811DE3000C538B /* EatFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E9FB6C2A811DE3000C538B /* EatFruitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatFruitsApp.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				A053027B2A84F12100193121 /* FruitRowView.swift */,
 				A025E2512A85F23D0092F109 /* FruitHeaderView.swift */,
 				A025E2532A85F6BC0092F109 /* SourceLinkView.swift */,
+				A025E2552A862A1A0092F109 /* FruitNutrientsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				A025E2542A85F6BC0092F109 /* SourceLinkView.swift in Sources */,
 				A01155432A83A29900A5460D /* FruitCardView.swift in Sources */,
 				A053027C2A84F12100193121 /* FruitRowView.swift in Sources */,
+				A025E2562A862A1B0092F109 /* FruitNutrientsView.swift in Sources */,
 				A01155452A83A7DD00A5460D /* StartButtonView.swift in Sources */,
 				A025E2502A85ED080092F109 /* FruitDetailView.swift in Sources */,
 				A0E9FB6F2A811DE3000C538B /* ContentView.swift in Sources */,
