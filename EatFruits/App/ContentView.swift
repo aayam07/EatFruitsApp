@@ -12,6 +12,9 @@ struct ContentView: View {
     //MARK: - PROPERTIES
     //    @AppStorage("isOnboarding") var isOnboarding: Bool?
     
+    // to store the value of whether or not the settings is shown on the screen or not
+    @State private var isShowingSettings: Bool = false  // settings sheet hidden by default
+    
     var fruits: [Fruit] = fruitsData
     
     //MARK: - BODY
@@ -34,6 +37,17 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Fruits")
+            .navigationBarItems(trailing:
+                                    Button(action: {
+                isShowingSettings = true
+            }, label: {
+                Image(systemName: "slider.horizontal.3")
+            }) //: BUTTON
+                .sheet(isPresented: $isShowingSettings, content: {
+                    SettingsView()
+                })
+            )
+            
         }  //: NAVIGATION
 
     }
