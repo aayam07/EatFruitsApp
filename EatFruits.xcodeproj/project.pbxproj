@@ -18,6 +18,7 @@
 		A025E2562A862A1B0092F109 /* FruitNutrientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025E2552A862A1A0092F109 /* FruitNutrientsView.swift */; };
 		A025E2582A8942C40092F109 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025E2572A8942C40092F109 /* SettingsView.swift */; };
 		A025E25A2A8A4B3B0092F109 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025E2592A8A4B3B0092F109 /* SettingsLabelView.swift */; };
+		A025E25C2A8A595B0092F109 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025E25B2A8A595B0092F109 /* SettingsRowView.swift */; };
 		A053027C2A84F12100193121 /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053027B2A84F12100193121 /* FruitRowView.swift */; };
 		A0E9FB6D2A811DE3000C538B /* EatFruitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9FB6C2A811DE3000C538B /* EatFruitsApp.swift */; };
 		A0E9FB6F2A811DE3000C538B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9FB6E2A811DE3000C538B /* ContentView.swift */; };
@@ -37,6 +38,7 @@
 		A025E2552A862A1A0092F109 /* FruitNutrientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrientsView.swift; sourceTree = "<group>"; };
 		A025E2572A8942C40092F109 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A025E2592A8A4B3B0092F109 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
+		A025E25B2A8A595B0092F109 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		A053027B2A84F12100193121 /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
 		A0E9FB692A811DE3000C538B /* EatFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E9FB6C2A811DE3000C538B /* EatFruitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatFruitsApp.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				A025E2532A85F6BC0092F109 /* SourceLinkView.swift */,
 				A025E2552A862A1A0092F109 /* FruitNutrientsView.swift */,
 				A025E2592A8A4B3B0092F109 /* SettingsLabelView.swift */,
+				A025E25B2A8A595B0092F109 /* SettingsRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			files = (
 				A011554D2A83C99300A5460D /* FruitData.swift in Sources */,
 				A025E2542A85F6BC0092F109 /* SourceLinkView.swift in Sources */,
+				A025E25C2A8A595B0092F109 /* SettingsRowView.swift in Sources */,
 				A01155432A83A29900A5460D /* FruitCardView.swift in Sources */,
 				A053027C2A84F12100193121 /* FruitRowView.swift in Sources */,
 				A025E2562A862A1B0092F109 /* FruitNutrientsView.swift in Sources */,
@@ -355,6 +359,7 @@
 				INFOPLIST_FILE = EatFruits/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,6 +388,7 @@
 				INFOPLIST_FILE = EatFruits/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

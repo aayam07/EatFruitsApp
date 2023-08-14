@@ -20,6 +20,7 @@ struct SettingsView: View {
         NavigationView{
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 20) {
+                    
                     //MARK: - SECTION 1
                     
                     GroupBox {
@@ -42,13 +43,36 @@ struct SettingsView: View {
                     } label: {
                         // resuable Label View Component
                        SettingsLabelView(labelText: "EatFruits", labelImage: "info.circle")
-                    }
+                    }  //: BOX
 
                     
                     //MARK: - SECTION 2
                     
                     
                     //MARK: - SECTION 3
+                    
+                    GroupBox {
+                        
+                        // content of the GroupBox
+                        
+                        SettingsRowView(name: "Developer", content: "Aayam Adhikari")
+                        
+                        SettingsRowView(name: "Designer ", content: "Aayam Adhikari")
+
+                        SettingsRowView(name: "Compatibility", content: "iOS 14")
+
+                        SettingsRowView(name: "Github", linkLabel: "My Profile", linkDestination: "github.com/aayam07")
+
+                        SettingsRowView(name: "Twitter", linkLabel: "@AayamAdhikari2", linkDestination: "twitter.com/AayamAdhikari2")
+
+                        SettingsRowView(name: "SwiftUI", content: "3.0")
+
+                        SettingsRowView(name: "Version", content: "1.1.0")
+                        
+                        
+                    } label: {
+                        SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
+                    }  //: BOX
                     
                     
 
