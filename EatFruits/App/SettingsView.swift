@@ -15,6 +15,9 @@ struct SettingsView: View {
 //    @Environment(\.isPresented) var isPresented
     @Environment(\.dismiss) var dismiss  // to dismiss the settings sheet programatically
     
+    // to implement Reset Toggle Button Feature
+    @AppStorage("isOnboarding") var isOnboardingViewActive: Bool = false
+    
     //MARK: - BODY
     var body: some View {
         NavigationView{
@@ -48,6 +51,43 @@ struct SettingsView: View {
                     
                     //MARK: - SECTION 2
                     
+                    GroupBox {
+                        
+                        // GroupBox content
+                        Divider()
+                            .padding(.vertical, 4)
+                        
+                        Text("If you wish, you can restart the application by toggle switch in this box. It starts the onboarding process and you will see the welcome screen again.")
+                            .padding(.vertical, 8)
+                            .frame(minHeight: 60)
+                            .layoutPriority(1)  // to not truncate the text at any cost
+                            .font(.footnote)
+                            .multilineTextAlignment(.leading)
+                        
+                        
+                        // If isOnboardingViewActive binding boolean variable is true then the toggle is ON and vice-versa, then the app's Onboarding view is active and shown behind the settings sheet
+                        Toggle(isOn: $isOnboardingViewActive) {
+                            // Label for the toggle
+                            if isOnboardingViewActive {
+                                Text("Restarted".uppercased())
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.green)
+                            } else {
+                                Text("Restart".uppercased())
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.secondary)
+                            }
+                        }
+                        .padding()
+                        .background(
+                            Color(UIColor.tertiarySystemBackground)
+                                .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                        )
+                        
+                    } label: {
+                        SettingsLabelView(labelText: "Customization", labelImage: "paintbrush")
+                    }
+
                     
                     //MARK: - SECTION 3
                     

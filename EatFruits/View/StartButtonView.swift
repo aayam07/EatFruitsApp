@@ -30,6 +30,11 @@ struct StartButtonView: View {
                 Capsule()
                     .strokeBorder(Color.white, lineWidth: 1.25)
             )
+//            .overlay {
+//                Capsule()
+//                    .stroke()
+//
+//            }
         }  //: BUTTON
         .accentColor(Color.white)  // to keep label color as white even in light mode
 //        .background(
